@@ -9,6 +9,7 @@
 html {
     font-size: 16px;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -40,20 +41,13 @@ body {
     flex: 50%;
 }
 
-.join-btn {
-    border: 2px solid #ef7a2e;
-}
-
-.join-btn:hover {
-    background-color: #ef7a2e;
-    color: #fff;
-}
-
 .btn {
     cursor: pointer;
     background-color: inherit;
     font-size: 16px;
     padding: 12px 30px;
+    text-decoration: none;
+    border: none;
 }
 
 .sheet {
@@ -90,6 +84,7 @@ body {
 /* Intro */
 #intro {
     padding-top: 60px;
+    position: relative;
 }
 
 .intro__col-1 {
@@ -99,10 +94,10 @@ body {
 
 .intro__content {
     font-size: 40px;
+    margin-bottom: 40px;
 }
 
 .intro__btn {
-    margin-top: 35px;
     border: 2px solid #fff;
 }
 
@@ -118,7 +113,7 @@ body {
 .intro__header {
     position: absolute;
     left: 13%;
-    bottom: 20px;
+    bottom: 0;
     font-size: 110px;
     text-shadow: 10px 10px rgba(0, 0, 0, 0.6);
     font-style: italic;
@@ -150,7 +145,11 @@ body {
 .or-block {
     background-color: #ef7a2e;
     height: 197px;
-    margin: 140px 0;
+    margin: 150px 0;
+}
+
+.or-block + .or-block {
+    margin-top: 210px;
 }
 
 .line-up__list {
@@ -161,6 +160,7 @@ body {
 
 .line-up__item {
    flex: 33.333%;
+   margin-bottom: 20px;
 }
 
 .line-up__img {
@@ -171,7 +171,7 @@ body {
 
 .line-up__btn {
     border: 2px solid #ef7a2e;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
 }
 
 .line-up__btn:hover {
@@ -185,17 +185,18 @@ body {
     color: #000;
 }
 
-.shirt__col-1 {
+.shirt__col-2 {
     padding: 50px 0;
 }
 
-.shirt__col-2 {
+.shirt__col-1 {
     padding-top: 40px;
-    border-left: 2px solid #ef7a2e;
+    border-right: 2px solid #ef7a2e;
 }
 
 .shirt__img {
     width: 60%;
+    max-height: 400px;
     box-shadow: 0 0 10px;
 }
 
@@ -210,6 +211,7 @@ body {
 .shirt__header {
     font-size: 60px;
     letter-spacing: 4px;
+    margin-bottom: 100px;
 }
 /* Shirt */
 
@@ -220,14 +222,6 @@ body {
 
 #invite .sheet {
     padding: 70px 0;
-}
-
-.intite__col-1 {
-    color: #000;
-}
-
-.intite__col-2 {
-    color: #fff;
 }
 
 .invite__img-1 {
@@ -263,8 +257,15 @@ body {
     font-weight: normal;
 }
 
-#invite .join-btn {
+.invite__btn {
     float: right;
+    border: 2px solid #ef7a2e;
+    color: #000;
+}
+
+.invite__btn:hover {
+    background-color: #ef7a2e;
+    color: #fff;
 }
 
 .invite__title {
@@ -280,16 +281,13 @@ body {
     position: relative;
 }
 
-#contact .sheet{
-}
-
 .contact__img {
     position: absolute;
-    top: -400px;
+    top: -380px;
 }
 
 #contact .or-block {
-    margin-top: 400px;
+    margin-top: 380px;
 }
 
 .contact__box {
@@ -326,7 +324,6 @@ body {
     margin-top: 15px;
     background-color: #000;
     color: #fff;
-    border: none;
     margin-left: 8px;
 }
 
@@ -355,3 +352,62 @@ body {
     color: #ddd;
 }
 /* Footer */
+
+/* Sidebar */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+.sidebar {
+    background-color: #000;
+    width: 250px;
+    height: 100%;
+    animation: sideleft linear 0.3s;
+
+}
+
+.sidebar__close {
+    float: right;
+    padding: 16px 20px;
+    background-color: inherit;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.sidebar__nav {
+    padding-top: 60px;
+}
+
+.sidebar__btn {
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+.sidebar__close:hover,
+li:hover > .sidebar__btn {
+    background-color: #ccc;
+    color: #000;
+}
+/* Sidebar */
+
+@keyframes sideleft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

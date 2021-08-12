@@ -1,0 +1,143 @@
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .sheet {
+        width: 700px;
+    }
+
+    .intro__col-1 {
+        padding-top: 20px;
+    }
+
+    .intro__content {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .intro__header {
+        font-size: 70px;
+        margin-bottom: -10px;
+    }
+
+    .line-up__img {
+        height: 230px;
+    }
+
+    .or-block + .or-block {
+        margin-top: 170px;
+    }
+
+    .or-block {
+        height: 150px;
+        margin: 120px 0;
+    }
+
+    .line-up__list {
+        top: 24%;
+    }
+
+    .invite__header-box {
+        left: 3%;
+        min-width: 300px;
+        padding: 15px;
+    }
+
+    .invite__img-2 {
+        top: 24%;
+        width: 45%;
+    }
+
+    .contact__img {
+        top: -230px;
+    }
+
+    #contact .or-block {
+        margin-top: 230px;
+    }
+
+    .contact__box {
+        width: 600px;
+        top: -450px;
+        padding: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .sheet {
+        width: 340px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .intro__col-1 {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .intro__header {
+        font-size: 60px;
+        left: unset;
+    }
+
+    .line-up__list {
+        position: unset;
+        margin-top: 15px;
+    }
+
+    .shirt__col-1 {
+        border: none;
+    }
+
+    .shirt__col-2 {
+        padding-top: 0;
+    }
+    
+    .shirt__img {
+        height: 250px;
+    }
+
+    .shirt__header {
+        margin-bottom: 15px;
+    }
+
+    .invite__header-box {
+        padding: 20px;
+        max-width: 250px !important;
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .invite__header {
+        font-size: 25px;
+    }
+
+    .invite__img-2 {
+        width: 90%;
+        top: 54%;
+    }
+
+    #invite .or-block {
+        margin: 70px 0;
+    }
+
+    .invite__btn {
+        float: unset;
+        text-align: center;
+    }
+
+    .contact__box {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .contact__img {
+        top: -50px;
+    }
+
+    #contact .or-block {
+        margin-top: 50px;
+    }
+}
