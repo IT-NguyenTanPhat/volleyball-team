@@ -40,27 +40,27 @@
 				<div class="or-block"></div>
 				<div class="line-up__list row">
 					<div class="line-up__item">
-						<p class="mb-10">Ace<br>Trần Khải Hoàng</p>
+						<p class="mb-10"><span>Ace</span><br>Trần Khải Hoàng</p>
 						<img class="line-up__img" src="assets/img/hoang.jpg" alt="Line-up">
 					</div>
 					<div class="line-up__item">
-						<p class="mb-10">Setter<br>Nguyễn Tấn Phát</p>
+						<p class="mb-10"><span>Setter</span><br>Nguyễn Tấn Phát</p>
 						<img class="line-up__img" src="assets/img/me.jpeg" alt="Line-up">
 					</div>
 					<div class="line-up__item">
-						<p class="mb-10">Opposite Hitter<br>Nguyễn Đăng Khoa</p>
+						<p class="mb-10"><span>Opposite Hitter</span><br>Nguyễn Đăng Khoa</p>
 						<img class="line-up__img" src="assets/img/khoa.JPG" alt="Line-up">
 					</div>
 					<div class="line-up__item">
-						<p class="mb-10">Hitter<br>Trần Tuấn Tài</p>
+						<p class="mb-10"><span>Hitter</span><br>Trần Tuấn Tài</p>
 						<img class="line-up__img" src="assets/img/tai.jpg" alt="Line-up">
 					</div>
 					<div class="line-up__item">
-						<p class="mb-10">Libero<br>Nguyễn Đức Hoà</p>
+						<p class="mb-10"><span>Libero</span><br>Nguyễn Đức Hoà</p>
 						<img class="line-up__img" src="assets/img/hoa.jpg" alt="Line-up">
 					</div>
 					<div class="line-up__item">
-						<p class="mb-10">Hitter<br>Phạm Trung Nguyên</p>
+						<p class="mb-10"><span>Hitter</span><br>Phạm Trung Nguyên</p>
 						<img class="line-up__img" src="assets/img/nguyen.jpg" alt="Line-up">
 					</div>
 				</div>
@@ -113,34 +113,36 @@
 
 		<!-- Contact -->
 		<section id="contact">
-			<div class="contact__img"><img src="assets/img/team.JPG" alt="Contact" class="full"></div>
+			<img class="contact__img full" src="assets/img/team.JPG" alt="">
 			<div class="sheet">
-				<div><div class="or-block"></div></div>
-				<div class="contact__box">
-					<h2 class="contact__header text-center">Contact Us</h2>
-					<div class="contact__content row">
-						<div class="contact__item">
-							<p class="contact__name">Name</p>
-							<input placeholder="Enter your name" type="text" class="contact_in full" required>
+				<div class="or-block"></div>
+				<div class="contact__container">
+					<div class="contact__box">
+						<h2 class="contact__header text-center">Contact Us</h2>
+						<div class="contact__content row">
+							<div class="contact__item">
+								<p class="contact__name">Name</p>
+								<input placeholder="Enter your name" type="text" class="contact_in full" required>
+							</div>
+							<div class="contact__item">
+								<p class="contact__name">Date</p>
+								<input placeholder="dd/mm/yyyy" type="datetime" class="contact_in full" required>
+							</div>
+							<div class="contact__item">
+								<p class="contact__name">Email</p>
+								<input placeholder="Enter your email" type="email" class="contact_in full" required>
+							</div>
+							<div class="contact__item">
+								<p class="contact__name">Phone</p>
+								<input placeholder="Enter your phone" type="text" class="contact_in full" required>
+							</div>
+							<div class="contact__item">
+								<p class="contact__name">Message</p>
+								<input placeholder="Enter your message" type="text" class="contact_in full" required>
+							</div>
 						</div>
-						<div class="contact__item">
-							<p class="contact__name">Date</p>
-							<input placeholder="dd/mm/yyyy" type="datetime" class="contact_in full" required>
-						</div>
-						<div class="contact__item">
-							<p class="contact__name">Email</p>
-							<input placeholder="Enter your email" type="email" class="contact_in full" required>
-						</div>
-						<div class="contact__item">
-							<p class="contact__name">Phone</p>
-							<input placeholder="Enter your phone" type="text" class="contact_in full" required>
-						</div>
-						<div class="contact__item">
-							<p class="contact__name">Message</p>
-							<input placeholder="Enter your message" type="text" class="contact_in full" required>
-						</div>
+						<button class="contact__btn btn">SUBMIT</button>
 					</div>
-					<button class="contact__btn btn">SUBMIT</button>
 				</div>
 			</div>
 		</section>
@@ -213,6 +215,6 @@
 			for (let i of orBlock)
 				i.style.display = 'none';
 		}	
-</script>
+	</script>
 </body>
 </html>

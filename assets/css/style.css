@@ -51,9 +51,9 @@ body {
 }
 
 .sheet {
-    position: relative;
     margin: 0 auto;
     width: 1200px;
+    position: relative;
 }
 /* Common */
 
@@ -62,7 +62,7 @@ body {
     height: 60px;
     background-color: black;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
 }
 
 .header__logo {
@@ -163,10 +163,15 @@ body {
    margin-bottom: 20px;
 }
 
+.line-up__item span{
+    font-weight: bold;
+}
+
 .line-up__img {
     width: 60%;
     height: 320px;
     border-radius: 4px;
+    object-fit: cover;
 }
 
 .line-up__btn {
@@ -235,7 +240,7 @@ body {
     position: absolute;
     bottom: 20%;
     left: 13%;
-    min-width: 400px;
+    width: 400px;
 }
 
 .invite__under-block {
@@ -281,22 +286,35 @@ body {
     position: relative;
 }
 
+#contact .sheet {
+    position: absolute; 
+    top: 0;
+}
+
 .contact__img {
-    position: absolute;
-    top: -380px;
+    display: block;
 }
 
 #contact .or-block {
-    margin-top: 380px;
+    position: relative;
+    top: 375px;
+    margin: 0;
+    left: 32px;
+}
+
+.contact__container {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    left: 32px;
+    top: 208px;
 }
 
 .contact__box {
     background-color: #fff;
     padding: 60px;
     width: 900px;
-    position: relative;
-    top: -500px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .contact__content {
@@ -361,7 +379,7 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 100;
     display: none;
 }
 
